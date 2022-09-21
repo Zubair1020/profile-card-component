@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* *************Root Styel***************** */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* *********Variable********* */
+
+:root {
+
+--Dark-cyan:                    hsl(185, 75%, 39%);
+--Very-dark-desaturated-blue:   hsl(229, 23%, 23%);
+--Dark-grayish-blue:            hsl(227, 10%, 46%);
+--Dark-gray:                    hsl(0, 0%, 59%);
+--White:                        hsl(0, 0%, 100%);
+}
+
+/* *********Custom Style************* */
+
+body {
+  background-color: var(--Dark-cyan);
+  background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw  bottom 50vh, left 50vw  top 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+p {
+  font-size: .95rem;  
+}
+
+hr {
+  border: 1px var(--Dark-gray);
+  border-style: solid none none none;
+}
+
+h1, h2 {
+  color: var(--Very-dark-desaturated-blue);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+p, span{
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
+}
+
+.main {
+  background: var(--White);
+  border-radius: 20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 200ms, box-shadow;
+}
+
+.section1 {
+  position: relative;
+}
+
+.card-bg {
+  border-radius: 20px 20px 0 0;
+}
+
+.avatar {
+  border: 6px solid var(--White);
+  border-radius: 100%;
+  margin: auto;
+  position: absolute;
+  left: 122px;
+  bottom: -50px;
+}
+
+.section2 {
+  margin: 65px 0 20px;
+}
+
+.section2 p {
+  margin-top: 5px;
+}
+
+.section3 {
+  display: flex;
+}
+
+ul {
+  padding: 5px 30px 20px;
+}
+
+.main:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+}
